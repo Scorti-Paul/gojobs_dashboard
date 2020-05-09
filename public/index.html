@@ -1,51 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CodingPhase - Learn To Code and Get Paid ASAP!</title>
-    <meta property="og:title" content="CodingPhase - Learn To Code and Get Paid ASAP!">
-    <meta name="description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
-    <meta property="og:description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
-    <meta property="og:image" content="https://codingphase.com/img/websitethumb.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="CodingPhase LLC">
-    <meta name="twitter:image:alt" content="Learn how to code from one of the best platforms online.">
-    <meta name="twitter:site" content="@codingphase">
-    <meta property="og:url" content="https://codingphase.com">
-    <link rel="canonical" href="/">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ad38f1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/iconsfavicon-16x16.png">
-    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <div class="home">
-        <div class="Aligner">
-          <div class="Aligner-item"><img src="/img/logo.png" alt="codingphase logo">
-            <h1>Dev-Starter-Kit</h1>
-            <div class="menu">
-              <ul>
-                <li><a href="http://starterkit.codingphase.com" target="new">Documentation</a></li>
-                <li><a href="http://www.codingphase.com" target="new">CodingPhase.Com</a></li>
-              </ul>
+
+<head>
+  <title>GoJobs - Dashboard</title>
+  <meta property="og:title" content="CodingPhase - Learn To Code and Get Paid ASAP!">
+  <meta name="description"
+    content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
+  <meta property="og:description"
+    content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
+  <meta property="og:image" content="https://codingphase.com/img/websitethumb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:site_name" content="CodingPhase LLC">
+  <meta name="twitter:image:alt" content="Learn how to code from one of the best platforms online.">
+  <meta name="twitter:site" content="@codingphase">
+  <meta property="og:url" content="https://codingphase.com">
+  <link rel="canonical" href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ad38f1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/iconsfavicon-16x16.png">
+  <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div class="logo">
+        <a href="#">GoJobs</a>
+      </div>
+      <ul>
+        <li><i class="fa fa-home"></i><a href="">Home</a></li>
+        <li><i class="fa fa-history" aria-hidden="true"></i><a href="">Applied History</a></li>
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="">Jobs Bookmarks</a></li>
+        <li><i class="fa fa-calendar" aria-hidden="true"></i><a href="">Interview Schedule</a></li>
+        <li><i class="fa fa-user" aria-hidden="true"></i><a href="">Profile</a></li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="">Setting</a></li>
+      </ul>
+    </aside>
+    <div class="content">
+      <header>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <form>
+          <input type="search" name="search" placeholder="Type here for search">
+        </form>
+        <ul>
+          <li><i class="fa fa-plus" aria-hidden="true"></i><span>Add</span></li>
+          <li><i class="fa fa-notify" aria-hidden="true"><span class="notify-number"></span></i></li>
+          <li><span class="profile-image"></span></li>
+          <li><span class="more"></span></li>
+        </ul>
+      </header>
+      <main>
+        <div class="title">
+          <h1>Dashboard</h1>
+          <p>Welcome to GoJobs job seeker dashboard</p>
+        </div>
+        <div class="cards">
+          <div class="first-card">
+            <div class="card-image"></div>
+            <p>John Levis</p>
+            <p>Full Stack Developer</p>
+            <div class="separator"></div>
+            <div class="previous">
+              <span>Previous</span>
+              <span>Dolaitte IT, Stack IT School</span>
             </div>
-            <div class="version-num">version 4.0.0</div>
+            <div class="education">
+              <span>Education</span>
+              <span>Stack University - IT Consultant</span>
+            </div>
+          </div>
+
+          <div class="second-card">
+            <div class="card-title">
+              <p>Interview Schedule</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+            <p class="date">
+              21 July, 2016
+            </p>
+            <div class="info">
+              <div class="circle"><span>CT</span></div>
+              <p>Online travel & ticketing site</p>
+              <p>Senior UI/UX Designer</p>
+              <small>8:00 AM</small>
+            </div>
+            <div class="info">
+              <div class="circle"><span>OR</span></div>
+              <p>Online travel & ticketing site</p>
+              <p>Senior UI/UX Designer</p>
+              <small>5:47 AM</small>
+            </div>
+          </div>
+
+          <div class="third-card">
+            <div class="card-title">
+              <p>Interview Schedule</p>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+
+            <div class="chart">
+
+
+
+            </div>
+
+
+            <div class="legend">
+              <span class="circle green"></span>
+              <p class="marks">2 to 13</p>
+              <p class="mark-meaning">Hired</p>
+            </div>
+            <div class="legend">
+              <span class="circle orange"></span>
+              <p class="marks">4 to 13</p>
+              <p class="mark-meaning">Interview</p>
+            </div>
+            <div class="legend">
+              <span class="circle red"></span>
+              <p class="marks">5 to 13</p>
+              <p class="mark-meaning">Rejected</p>
+            </div>
           </div>
         </div>
-      </div>
+        <table>
+          <thead>
+            <tr>
+              <th>COMPANY</th>
+              <th>JOBS</th>
+              <th>END OF APPLICATION</th>
+              <th>LOCATION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="circle">OT</span> <span>Online Shopping E-Commerce</span></td>
+              <td>Java Developer</td>
+              <td>23 May, 2016</td>
+              <td>Jakarta</td>
+              <td><i class="fa fa-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+              <td><span class="circle">DS</span> <span>Digital Solution Company</span></td>
+              <td>Backend Developer (Java or PHP)</td>
+              <td>22 June, 2016</td>
+              <td>Jakarta</td>
+              <td><i class="fa fa-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+              <td><span class="circle">DS</span> <span>Digital Solution Company</span></td>
+              <td>Front-End Developer</td>
+              <td>25 June, 2016</td>
+              <td>Jakarta</td>
+              <td><i class="fa fa-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+              <td><span class="circle">OT</span> <span>Online Travel & Ticketing Site</span></td>
+              <td>UI/UX Designer</td>
+              <td>20 June, 2016</td>
+              <td>Jakarta</td>
+              <td><i class="fa fa-ellipsis-h"></i></td>
+            </tr>
+            <tr>
+              <td><span class="circle">OS</span> <span>Malaysian Based Software Dev . . .</span></td>
+              <td>Java Developer</td>
+              <td>1 Aug, 2016</td>
+              <td>Surabaya</td>
+              <td><i class="fa fa-ellipsis-h"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
     </div>
-    <script src="/js/dist/vendors~FirstComp.js"></script>
-    <script src="/js/dist/FirstComp.js"></script>
-    <script src="/js/dist/main.js"></script>
-  </body>
+  </div>
+</body>
+
 </html>
