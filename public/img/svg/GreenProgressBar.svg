@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="193" viewBox="0 0 195 193">
+  <g id="GreenProgressBar" transform="translate(-0.288 -0.307)">
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(0.288 0.307)" fill="none" stroke="#e7e9f5" stroke-width="7">
+      <ellipse cx="97.5" cy="96.5" rx="97.5" ry="96.5" stroke="none"/>
+      <ellipse cx="97.5" cy="96.5" rx="94" ry="93" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(0.288 0.307)" fill="none" stroke="#80ac52" stroke-linecap="round" stroke-width="7" stroke-dasharray="302 10000">
+      <ellipse cx="97.5" cy="96.5" rx="97.5" ry="96.5" stroke="none"/>
+      <ellipse cx="97.5" cy="96.5" rx="94" ry="93" fill="none"/>
+    </g>
+  </g>
+</svg>

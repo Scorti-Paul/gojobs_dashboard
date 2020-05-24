@@ -40,23 +40,38 @@
         <a href="#">GoJobs</a>
       </div>
       <ul>
-        <li class="active"><i class="fa fa-home"></i><a href="">Home</a></li>
-        <li><i class="fa fa-history" aria-hidden="true"></i><a href="">Applied History</a></li>
-        <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="">Jobs Bookmarks</a></li>
-        <li><i class="fa fa-calendar" aria-hidden="true"></i><a href="">Interview Schedule</a></li>
-        <li><i class="fa fa-user" aria-hidden="true"></i><a href="">Profile</a></li>
-        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="">Setting</a></li>
+        <li class="active">
+          <a href=""><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="" class="link-1"><i class="fa fa-history" aria-hidden="true"></i>Applied History</a>
+        </li>
+        <li>
+
+          <a href="" class="link-2"><i class="fa fa-bookmark" aria-hidden="true"></i>Jobs Bookmarks</a>
+        </li>
+        <li>
+
+          <a href="" class="link-3"><i class="fa fa-calendar" aria-hidden="true"></i>Interview Schedule</a></li>
+        <li>
+          <a href=""><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-cog" aria-hidden="true"></i>Setting</a>
+        </li>
       </ul>
     </aside>
     <div class="content">
       <header>
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <form>
-          <input type="search" name="search" placeholder="Type here for search">
-        </form>
+        <div class="search-area">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <form>
+            <input type="search" name="search" placeholder="Type here for search">
+          </form>
+        </div>
         <ul>
-          <li><i class="fa fa-plus" aria-hidden="true"></i><span>Add</span></li>
-          <li><i class="fa fa-bell-o" aria-hidden="true"><span class="notify-number"></span></i></li>
+          <li><i class="fa fa-plus" aria-hidden="true"></i> <span>Add</span></li>
+          <li><i class="fa fa-bell-o" aria-hidden="true"><span class="notify-number">3</span></i></li>
           <li class="profile-image">
             <img src="./../assets/img/profile-image.jpg" alt="">
           </li>
@@ -71,8 +86,8 @@
         <div class="cards">
           <div class="first-card">
             <div class="card-image"></div>
-            <p>John Levis</p>
-            <p>Full Stack Developer</p>
+            <p class="name">John Levis</p>
+            <p class="position">Full Stack Developer</p>
             <div class="separator"></div>
             <div class="previous">
               <span>Previous</span>
@@ -89,99 +104,124 @@
               <p>Interview Schedule</p>
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </div>
-            <p class="date">
-              21 July, 2016
-            </p>
-            <div class="info">
-              <div class="circle"><span>CT</span></div>
-              <p>Online travel & ticketing site</p>
-              <p>Senior UI/UX Designer</p>
-              <small>8:00 AM</small>
+
+            <div class="date">
+              <p>21 July, 2016</p>
             </div>
-            <div class="info">
-              <div class="circle"><span>OR</span></div>
-              <p>Online travel & ticketing site</p>
-              <p>Senior UI/UX Designer</p>
-              <small>5:47 AM</small>
+
+            <div class="card-details">
+              <div class="info">
+                <div class="circle">
+                  <span>CT</span>
+                </div>
+                <div class="details">
+                  <p>Online travel & ticketing site</p>
+                  <p>Senior UI/UX Designer</p>
+                  <small>8:00 AM</small>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="info">
+                <div class="circle blue">
+                  <span>OR</span>
+                </div>
+                <div class="details">
+                  <p>Online travel & ticketing site</p>
+                  <p>Senior UI/UX Designer</p>
+                  <small>5:47 AM</small>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="third-card">
             <div class="card-title">
-              <p>Interview Schedule</p>
+              <p>Apply Status</p>
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </div>
 
             <div class="chart">
-
-
-
+              <img src="./img/svg/GreenProgressBar.svg" alt="">
+              <img src="./img/svg/OrangeProgressBar.svg" alt="">
+              <img src="./img/svg/RedProgressBar.svg" alt="">
             </div>
 
 
             <div class="legend">
-              <span class="circle green"></span>
-              <p class="marks">2 to 13</p>
-              <p class="mark-meaning">Hired</p>
-            </div>
-            <div class="legend">
-              <span class="circle orange"></span>
-              <p class="marks">4 to 13</p>
-              <p class="mark-meaning">Interview</p>
-            </div>
-            <div class="legend">
-              <span class="circle red"></span>
-              <p class="marks">5 to 13</p>
-              <p class="mark-meaning">Rejected</p>
+              <div class="legend-item">
+                <div class="circle green"></div>
+                <div>
+                  <p class="marks">2 to 13</p>
+                  <p class="mark-meaning">Hired</p>
+                </div>
+              </div>
+              <div class="legend-item">
+                <div class="circle orange"></div>
+                <div>
+                  <p class="marks">4 to 13</p>
+                  <p class="mark-meaning">Interview</p>
+                </div>
+              </div>
+              <div class="legend-item">
+                <div class="circle red"></div>
+                <div>
+                  <p class="marks">5 to 13</p>
+                  <p class="mark-meaning">Rejected</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <table>
-          <thead>
-            <tr>
-              <th>COMPANY</th>
-              <th>JOBS</th>
-              <th>END OF APPLICATION</th>
-              <th>LOCATION</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="circle">OT</span> <span>Online Shopping E-Commerce</span></td>
-              <td>Java Developer</td>
-              <td>23 May, 2016</td>
-              <td>Jakarta</td>
-              <td><i class="fa fa-ellipsis-h"></i></td>
-            </tr>
-            <tr>
-              <td><span class="circle">DS</span> <span>Digital Solution Company</span></td>
-              <td>Backend Developer (Java or PHP)</td>
-              <td>22 June, 2016</td>
-              <td>Jakarta</td>
-              <td><i class="fa fa-ellipsis-h"></i></td>
-            </tr>
-            <tr>
-              <td><span class="circle">DS</span> <span>Digital Solution Company</span></td>
-              <td>Front-End Developer</td>
-              <td>25 June, 2016</td>
-              <td>Jakarta</td>
-              <td><i class="fa fa-ellipsis-h"></i></td>
-            </tr>
-            <tr>
-              <td><span class="circle">OT</span> <span>Online Travel & Ticketing Site</span></td>
-              <td>UI/UX Designer</td>
-              <td>20 June, 2016</td>
-              <td>Jakarta</td>
-              <td><i class="fa fa-ellipsis-h"></i></td>
-            </tr>
-            <tr>
-              <td><span class="circle">OS</span> <span>Malaysian Based Software Dev . . .</span></td>
-              <td>Java Developer</td>
-              <td>1 Aug, 2016</td>
-              <td>Surabaya</td>
-              <td><i class="fa fa-ellipsis-h"></i></td>
-            </tr>
-          </tbody>
+          <tr>
+            <th>COMPANY</th>
+            <th>JOBS</th>
+            <th>END OF APPLICATION</th>
+            <th>LOCATION</th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="circle blue">OT</span>
+              <span>Online Shopping E-Commerce</span>
+            </td>
+            <td>Java Developer</td>
+            <td>23 May, 2016</td>
+            <td>Jakarta</td>
+            <td><i class="fa fa-ellipsis-h"></i></td>
+          </tr>
+          <tr>
+            <td><span class="circle green">DS</span> <span>Digital Solution Company</span></td>
+            <td>Backend Developer (Java or PHP)</td>
+            <td>22 June, 2016</td>
+            <td>Jakarta</td>
+            <td><i class="fa fa-ellipsis-h"></i></td>
+          </tr>
+          <tr>
+            <td><span class="circle green">DS</span> <span>Digital Solution Company</span></td>
+            <td>Front-End Developer</td>
+            <td>25 June, 2016</td>
+            <td>Jakarta</td>
+            <td><i class="fa fa-ellipsis-h"></i></td>
+          </tr>
+          <tr>
+            <td><span class="circle orange">OT</span> <span>Online Travel & Ticketing Site</span></td>
+            <td>UI/UX Designer</td>
+            <td>20 June, 2016</td>
+            <td>Jakarta</td>
+            <td><i class="fa fa-ellipsis-h"></i></td>
+          </tr>
+          <tr>
+            <td><span class="circle blue">OS</span> <span>Malaysian Based Software Dev . . .</span></td>
+            <td>Java Developer</td>
+            <td>1 Aug, 2016</td>
+            <td>Surabaya</td>
+            <td><i class="fa fa-ellipsis-h"></i></td>
+          </tr>
         </table>
       </main>
     </div>
