@@ -1,78 +1,341 @@
 body {
-background-color: $bg;
+    background-color: $bg;
 
-.container {
-    display: flex;
-    aside {
-        background-color: #2E2B40;
-        width: 20%;
-        .logo {
-            padding: 20px;
-            a {
-                color: $white;
-                text-decoration: none;
-                font-size: 2rem;
-            }
-        }
-        ul {
-            display: flex;
-            flex-flow: column nowrap;
-            li {
-                padding: 20px 0 20px 30px;
-                .fa {
-                    color: $green;
-                }
+    .container {
+        display: flex;
+        aside {
+            background-color: #2E2B40;
+            width: 20%;
+            .logo {
+                padding: 20px;
+                text-align: center;
                 a {
                     color: $white;
                     text-decoration: none;
-                }
-            }
-            li.active {
-                border-left: 5px solid $green;
-            }
-        }
-    }
-    .content {
-        width: 80%;
-        header {
-            display: flex;
-            background-color: #fff;
-            padding: 20px;
-            .fa {
-                margin-top: 5px;
-            }
-            form {
-                input {
-                    width: 600px;
-                    margin-left: 10px;
-                    padding: 5px;
-                    border: none;
+                    font-size: 2rem;
                 }
             }
             ul {
                 display: flex;
-                justify-content: space-between;
-                width: 200px;
-                margin-left: 350px;
-                .profile-image {
-                    width: 30px;
-                    height: 30px;
-                    border: 1px solid #000;
-                    border-radius: 50%;
-                }
+                flex-flow: column nowrap;
                 li {
-                    i.fa-caret-down {
-                        margin-left: -20px;
+                    cursor: pointer;
+                    .fa {
+                        color: $green;
+                        margin-right: 10px;
                     }
+                    a {
+                        display: flex;
+                        color: $white;
+                        text-decoration: none;
+                        padding: 20px 180px 20px 50px;
+                        &:hover {
+                            background-color: #252233;
+                        }
+                       span {
+                           display: inline-block;
+                           width: 150px;
+                           padding: 0px 30px;
+                       }
+                    } 
+                    .link-1 {
+                        padding: 20px 127px 20px 50px;
+                    }
+                    .link-2 {
+                        padding: 20px 118px 20px 50px;
+                    }
+                    .link-3 {
+                        padding: 20px 88px 20px 50px;
+                    }
+                }
+                li.active {
+                    border-left: 5px solid $green;
+                    background-color: #252233;
                 }
             }
         }
-    }
-
-
-    main {
-
-    }
+        .content {
+            width: 80%;
+            header {
+                display: flex;
+                background-color: #fff;
+                padding: 20px;
+                .search-area {
+                    display: flex;
+                    width: 70%;
+                    .fa {
+                    margin-top: 5px;
+                    color: #707070;
+                    }
+                    form {
+                        input {
+                            width: 600px;
+                            margin-left: 10px;
+                            padding: 5px;
+                            border: none;
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    width: 30%;
+                    margin-left: 350px;
+                    color: #707070;
+                    .profile-image {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #000;
+                        border-radius: 50%;
+                        margin-top: -5px;
+                    }
+                    li {
+                        margin-left: 15px;
+                        cursor: pointer;
+                        i.fa-caret-down {
+                            margin-left: -10px;
+                        }
+                        i.fa-bell-o {
+                            position: relative;
+                            span {
+                                width: 16px;
+                                height: 16px;
+                                background-color: $violet;
+                                border-radius: 50%;
+                                display: inline-block;
+                                position: absolute;
+                                top: -7px;
+                                left: 8px;
+                                font-weight: 500;
+                                color: #fff;
+                                text-align: center;
+                                font-size: 12px;
+                            } 
+                        }
+                    }
+                }
+            }
+        }          
+        main {
+            padding: 40px;
+            .title {
+                margin-bottom: 20px;
+                h1 {
+                    font-size: 28px;
+                    color: $violet;
+                }
+                p {
+                    color: $darkGray;
+                    font-size: 14px;
+                }
+            }
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                .first-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-basis: 360px;
+                    background-color: #fff;
+                    padding: 18px;
+                    border-radius: 5px;
+                    .card-image {
+                        width: 124px;
+                        height: 124px;
+                        border: 1px solid $green;
+                        border-radius: 50%;
+                    }
+                    p.name {
+                        padding-top: 20px;
+                        color: $violet;
+                    }
+                    p.position {
+                        padding-top: 10px;
+                        color: $gray;
+                    }
+                    .separator {
+                        height: 1px;
+                        width: 100%;
+                        border: none;
+                        background-color: $gray;
+                        margin: 20px 0;
+                    }
+                    .previous {
+                        align-self: flex-start;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        span:nth-child(1) {
+                            color: $gray;
+                        }
+                        span:nth-child(2) {
+                            margin-left: 27px;
+                        }
+                    }
+                    .education {
+                        align-self: flex-start;
+                        font-size: 14px;
+                        span:nth-child(1) {
+                            color: $gray;
+                        }
+                        span:nth-child(2) {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                .second-card {
+                    background-color: #fff;
+                    flex-basis: 360px;
+                    padding: 18px;
+                    border-radius: 5px;
+                    .card-title {
+                        display: flex;
+                        justify-content: space-between;
+                        color: $gray;
+                        margin-bottom: 35px;
+                        .fa {
+                            cursor: pointer;
+                        }
+                    }
+                    .date {
+                        border-left: 5px solid $green;
+                        margin: 0 0 30px -18px;
+                        padding: 5px 0;
+                        p {
+                        margin: 0 0 0px 30px;
+                        font-size: 22px;
+                        }
+                    }
+                    .card-details {
+                        display: flex;
+                        flex-direction: column;
+                        .info {
+                            display: flex;
+                            .circle {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                                width: 24px;
+                                height: 24px;
+                                background-color: $orange;
+                                border-radius: 50%;
+                                padding: 20px; 
+                                margin-right: 20px;
+                            }
+                            .circle.blue {
+                                background-color: $blue;
+                            }
+                            .details {
+                                p:nth-child(1), small {
+                                    color: $gray;
+                                }
+                                p:nth-child(1) {
+                                    margin-bottom: 5px;
+                                }
+                                p:nth-child(2) {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                        .divider {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                .third-card {
+                    flex-basis: 360px;
+                    background-color: #fff;
+                    padding: 18px;
+                    border-radius: 5px;
+                    .card-title {
+                        display: flex;
+                        justify-content: space-between;
+                        color: $gray;
+                        margin-bottom: 35px;
+                        .fa {
+                            cursor: pointer;
+                        }
+                    }
+                    .chart {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        top: 25%;
+                        img {
+                            position: absolute;
+                            transform: rotate(-80deg);
+                        }
+                    }
+                    .legend {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 190px;
+                        .legend-item {
+                            display: flex;
+                            flex-direction: row;
+                            .circle {
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                margin: 10px 10px 0 0;
+                            }
+                            .circle.green {
+                                background-color: $green;
+                            }
+                            .circle.orange {
+                                background-color: $orange;
+                            }
+                            .circle.red {
+                                background-color: $darkRed;
+                            }
+                        }
+                    }
+                }
+            }
+            table {
+                margin-top: 30px;
+                background-color: $white;
+                width: 100%;
+                border-radius: 5px;
+                th {
+                    background-color: #DBDEE9;
+                    padding: 15px;
+                    text-align: left;
+                }
+                th:nth-child(1) {
+                    border-top-left-radius: 5px;
+                }
+                th:nth-child(5) {
+                    border-top-right-radius: 5px;
+                }
+                tr {
+                    border-bottom: 1px solid #DBDEE9;
+                    td {
+                        padding: 20px;
+                        text-align: left;
+                        .circle {
+                            color: #fff;
+                            width: 20px;
+                            height: 20px;
+                            background-color: $orange;
+                            border-radius: 50%;
+                            padding: 10px;
+                            margin-right: 5px;
+                            &.blue {
+                                background-color: $blue;
+                            }
+                            &.green {
+                                background-color: $green;
+                            }
+                        }
+                    }
+                }
+                tr:nth-child(6) {
+                    border-bottom: none;
+                }
+            }
+        }
     
-}
+    }
 }
